@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#define DEBUG 1
+#define DEBUG 0
 
 #define TIME_OUT 100000
 #define KEEP_OUT_TIME 2000

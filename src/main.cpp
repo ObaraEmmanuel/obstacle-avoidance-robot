@@ -5,11 +5,11 @@
 uint8_t d_flag;
 FastPing *pinger;
 
-int my_delay = 50;
+int my_delay = 30;
 
 // speed constants
-int speed = 100;
-int turn_speed = 90;
+int speed = 120;
+int turn_speed = 100;
 
 // motor movement function prototypes
 void forward(int, int);
@@ -173,5 +173,6 @@ void loop() {
             // we should not get here
             steer((direction_t)pinger->greatest());
     }
+    // right(speed, speed);
     delay(my_delay);
 }
